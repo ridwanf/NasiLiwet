@@ -26,5 +26,17 @@ namespace Ridwan.Web.NasiLiwet.Web.Controllers
 
             return View();
         }
+
+        public ActionResult Product()
+        {
+            ViewBag.Message = "Product";
+            return View();
+        }
+
+        public ActionResult CaraPenyajian()
+        {
+            ViewBag.Message = "Cara Penyajian";
+            return View();
+        }
     }
 }
