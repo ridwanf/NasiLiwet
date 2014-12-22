@@ -225,6 +225,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\heroic-features.css" />
+    <Content Include="Content\img\bb-icon.png" />
     <Content Include="Content\img\cara-penyajian.jpg" />
     <Content Include="Content\img\liwetinstan-cumi.jpg" />
     <Content Include="Content\img\liwetinstan-jengkol.jpg" />
@@ -233,6 +234,8 @@
     <Content Include="Content\img\main-header-div-bg.png" />
     <Content Include="Content\img\main_image.jpg" />
     <Content Include="Content\img\nasiuduk-ungu.jpg" />
+    <Content Include="Content\img\phone-icon.jpg" />
+    <Content Include="Content\img\whatsapp-48.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -240,6 +243,10 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="bin\Ridwan.Web.NasiLiwet.Web.dll.config" />
+    <None Include="Properties\PublishProfiles\liwet1001 - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\liwet1001 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\liwet1001 - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\liwet1001 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -254,6 +261,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="underConstruction.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
