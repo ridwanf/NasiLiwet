@@ -31,6 +31,7 @@ namespace Ridwan.Web.NasiLiwet.Web
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
             BundleTable.EnableOptimizations = true;
+
         }
     }
 }

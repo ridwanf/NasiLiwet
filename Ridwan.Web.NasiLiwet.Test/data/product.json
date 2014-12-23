@@ -1,0 +1,81 @@
+﻿{
+    "Product": [
+        {
+            "id": "1",
+            "name": "Nasi Liwet Rasa Cumi 250 gr",
+            "price": "Rp. 17.000",
+            "weight": "250 gram",
+            "picurl": "~/content/img/liwet-cumi-250.jpg"
+        },
+        {
+
+            "id": "2",
+            "name": "Nasi Uduk ungu 250 gr",
+            "price": "Rp. 17.000",
+            "weight": "250 gram",
+            "picurl": "~/content/img/uduk-ungu-250.jpg"
+        },
+        {
+
+            "id": "3",
+            "name": "Nasi Liwet Rasa Jengkol 250 gr",
+            "price": "Rp. 17.000",
+            "weight": "250 gram",
+            "picurl": "~/content/img/liwet-jengkol-250.jpg"
+        },
+        {
+
+            "id": "4",
+            "name": "Nasi Liwet pedas 250 gr",
+            "price": "Rp. 17.000",
+            "weight": "250 gram",
+            "picurl": "~/content/img/liwet-pedas-250.jpg"
+        },
+        {
+            "id": "5",
+            "name": "Nasi Liwet Rasa jambal 250 gr",
+            "price": "Rp. 17.000",
+            "weight": "250 gram",
+            "picurl": "~/content/img/liwet-jambal-250.jpg"
+        },
+        {
+            "id": "6",
+            "name": "Nasi Liwet Rasa Cumi 500 gr",
+            "price": "Rp. 27.500",
+            "weight": "500 gram",
+            "picurl": "~/content/img/liwet-cumi-500.jpg"
+        },
+        {
+
+            "id": "7",
+            "name": "Nasi uduk original 250 gr",
+            "price": "Rp. 17.000",
+            "weight": "250 gram",
+            "picurl": "~/content/img/uduk-ori-250.jpg"
+        },
+        {
+
+            "id": "8",
+            "name": "Nasi Liwet Rasa Pete 250 gr",
+            "price": "Rp. 17.000",
+            "weight": "250 gram",
+            "picturl": "~/content/img/liwet-pete-250.jpg"
+        },
+        {
+
+            "id": "9",
+            "name": "Nasi Kuning Pedas 250 gr",
+            "price": "Rp. 17.000",
+            "weight": "250 gram",
+            "picturl": "~/content/img/kuning-pedas-250.jpg"
+        },
+        {
+
+            "id": "10",
+            "name": "Nasi Liwet Rasa Pete 500 gr",
+            "price": "Rp. 27.500",
+            "weight": "500 gram",
+            "picturl": "~/content/img/liwet-pete-500.jpg"
+        }
+    ]
+}
