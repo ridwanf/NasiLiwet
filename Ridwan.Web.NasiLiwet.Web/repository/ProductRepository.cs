@@ -14,7 +14,7 @@ namespace Ridwan.Web.NasiLiwet.Web.repository
         public List<Product> GetAllData()
         {
            // string appPath = "F:\\Project\\Api\\Ridwan.Web.NasiLiwet\\Ridwan.Web.NasiLiwet.Web\\data\\product.json";
-           var appPath =  Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"data\product.json");
+           var appPath =  Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"data/product.json");
             using (var r = new StreamReader(appPath))
             {
                 string json = r.ReadToEnd();

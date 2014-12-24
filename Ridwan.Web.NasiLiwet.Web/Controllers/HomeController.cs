@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Ridwan.Web.NasiLiwet.Web.helper;
 using Ridwan.Web.NasiLiwet.Web.repository;
 
 namespace Ridwan.Web.NasiLiwet.Web.Controllers
@@ -46,6 +47,12 @@ namespace Ridwan.Web.NasiLiwet.Web.Controllers
         {
             ViewBag.Message = "Cara Penyajian";
             return View();
+        }
+
+        public ActionResult SendEmail(string name, string email, string message)
+        {
+            MailHelper.SendEmail(email, name, null, message);
+            return RedirectToAction("Contact");
         }
     }
 }
