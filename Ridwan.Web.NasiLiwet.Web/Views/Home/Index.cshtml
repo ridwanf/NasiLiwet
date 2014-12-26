@@ -1,4 +1,7 @@
-﻿@{
+﻿@model IEnumerable<Ridwan.Web.NasiLiwet.Web.Models.Product>
+
+
+@{
     ViewBag.Title = "Nasi Liwet 1001";
 }
 
@@ -25,22 +28,26 @@
 <!-- /.row -->
 <!-- Page Features -->
 <div class="row text-center">
+@foreach (var data in Model)
+{
+
     <div class="col-md-3 col-sm-6 hero-feature">
         <div class="thumbnail">
-            <img src="~/Content/img/liwetinstan-cumi.jpg" alt="">
+            <img src="@data.PicUrl" alt="">
             <div class="caption">
-                <h3>Liwet Instant Cumi</h3>
+                <h3>@data.Name</h3>
                 <p>
-                    Liwet instant dengan rasa cumi yang nikmat. <br />
-                    Tersedia dalam ukuran 250 gr & 500 gr.
+                    @data.Name <br />
+                   Berat: @data.Weight gr &nbsp;Harga Rp. @data.PriceString    
                 </p>
                 <p>
-                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                    <a href="@Url.Action("Product","Home")" class="btn btn-default">More Info</a>
                 </p>
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6 hero-feature">
+}
+    @*<div class="col-md-3 col-sm-6 hero-feature">
         <div class="thumbnail">
             <img src="~/Content/img/nasiuduk-ungu.jpg" alt="">
             <div class="caption">
@@ -80,5 +87,5 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div>*@
 </div>

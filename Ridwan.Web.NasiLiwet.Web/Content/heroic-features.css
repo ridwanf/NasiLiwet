@@ -35,3 +35,8 @@ footer {
   .jumbotron h1 p {
       margin-left: 10px;
   }
+
+  .thumbnail>img {
+    width: 190px;
+    height: 190px;
+}

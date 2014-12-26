@@ -1,138 +1,163 @@
-﻿@model IEnumerable<Ridwan.Web.NasiLiwet.Web.Models.Product>
+﻿@using System.IO.IsolatedStorage
+@using Ridwan.Web.NasiLiwet.Web.helper
+@model IEnumerable<Ridwan.Web.NasiLiwet.Web.Models.Product>
 
 
 @{
     ViewBag.Title = "Product";
 }
-<div class="row">
-    @foreach (var data in Model)
-    {
-        <div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail">
-                <img src="@data.PicUrl" alt="">
-                <div class="caption">
-                    <h4 class="pull-right">Rp @data.Price</h4>
-                    <h4>
-                        <a href="#">@data.Name</a>
-                    </h4>
-                    <p>
-                        @data.Name @data.Weight<br />
-                        @data.Price
-                    </p>
-                </div>
-                <div class="ratings">
-                    <p class="pull-right">15 reviews</p>
-                    <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                    </p>
+
+
+<script type="text/javascript">
+
+    var setDetail = function(data) {
+        $('#namaItem').text(data.Name);
+        $('#beratBersih').text(data.Weight);
+        $('#panjang').text(data.Long);
+        $('#lebar').text(data.Width);
+        $('#tinggi').text(data.Height);
+        $('#detailDescription').text(data.Description);
+        $('#harga').text(data.PriceString);
+        $('#imageDetail').attr("src", data.PicUrlLg);
+    };
+
+
+    var getOne = function (id) {
+        $.ajax({
+            url: "@Url.Action("GetOne")",
+            type: "GET",
+            data: { "id": id },
+            success: function (data) {
+                setDetail(data);
+            },
+            errror: function (data) {
+                alert("error");
+            }
+        });
+    };
+
+
+    var getDetail = function(id) {
+        getOne(id);
+        $("#modalProductDetail").modal();
+    };
+
+
+
+</script>
+
+
+@foreach (var row in Model.Partition(3))
+{
+    <div class="row">
+        @foreach (var data in row)
+        {
+            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                <div class="thumbnail">
+                    <img src="@data.PicUrl" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">Rp @data.PriceString</h4>
+                        <h4>
+                            <a data-toggle="modal" href="#" onclick="getDetail(@data.Id)">@data.Name</a>
+                        </h4>
+                        <p>
+                            @data.Name @data.Weight gram<br />
+                            Rp.@data.PriceString
+                        </p>
+                    </div>
+                    @*<div class="ratings">
+                            <p class="pull-right">15 reviews</p>
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </p>
+                        </div>*@
                 </div>
             </div>
-        </div>
-    }
+        }
+    </div>
+}
 
 
-    @*<div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail">
-                <img src="http://placehold.it/320x150" alt="">
-                <div class="caption">
-                    <h4 class="pull-right">$64.99</h4>
-                    <h4>
-                        <a href="#">Second Product</a>
-                    </h4>
-                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="ratings">
-                    <p class="pull-right">12 reviews</p>
-                    <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </p>
-                </div>
+<div class="modal fade" data-backdrop="static" id="modalProductDetail" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Detail Produk</h4>
             </div>
-        </div>
-
-        <div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail">
-                <img src="http://placehold.it/320x150" alt="">
-                <div class="caption">
-                    <h4 class="pull-right">$74.99</h4>
-                    <h4>
-                        <a href="#">Third Product</a>
-                    </h4>
-                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="modal-body">
+                <div style="vertical-align:middle; text-align:center"">
+                    <img id="imageDetail" style="width: 550px;height: 400px;" />
                 </div>
-                <div class="ratings">
-                    <p class="pull-right">31 reviews</p>
-                    <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </p>
-                </div>
+                <span id="detailDescription"></span>
+                <h4>Detail Produk</h4>
+                <hr />
+                <table class="table-striped" style="width: 100%">
+                    <tr>
+                        <td>
+                            Name Item:
+                        </td>
+                        <td>
+                            <label id="namaItem"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Berat Bersih:
+                        </td>
+                        <td>
+                            <label> <span id="beratBersih"></span> gram</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Harga:
+                        </td>
+                        <td>
+                           <label >Rp.<span id="harga"></span> </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Izin Depkes:
+                        </td>
+                        <td><label> PIRT No. 8135320503816</label> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Halal MUI:
+                        </td>
+                        <td>
+                            <label>01331068720112</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Dimensi  :
+                        </td>
+                        <td>
+                            <label> <span id="panjang"></span> cm X <span id="lebar"></span> cm X <span id="tinggi"></span> cm </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Buatan  :
+                        </td>
+                        <td>
+                          <label>  CV. 1001 Garut Jawa Barat - Indonesia</label>
+                        </td>
+                    </tr>
+                </table>
             </div>
-        </div>
-
-        <div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail">
-                <img src="http://placehold.it/320x150" alt="">
-                <div class="caption">
-                    <h4 class="pull-right">$84.99</h4>
-                    <h4>
-                        <a href="#">Fourth Product</a>
-                    </h4>
-                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="ratings">
-                    <p class="pull-right">6 reviews</p>
-                    <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </p>
-                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
-        </div>
-
-        <div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail">
-                <img src="http://placehold.it/320x150" alt="">
-                <div class="caption">
-                    <h4 class="pull-right">$94.99</h4>
-                    <h4>
-                        <a href="#">Fifth Product</a>
-                    </h4>
-                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="ratings">
-                    <p class="pull-right">18 reviews</p>
-                    <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-4 col-lg-4 col-md-4">
-            <h4>
-                <a href="#">Like this template?</a>
-            </h4>
-            <p>If you like this template, then check out <a target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this tutorial</a> on how to build a working review system for your online store!</p>
-            <a class="btn btn-primary" target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">View Tutorial</a>
-        </div>*@
-
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
 </div>
+
+

@@ -12,6 +12,16 @@ namespace Ridwan.Web.NasiLiwet.Web.Models
         public decimal Price { get; set; }
         public double Weight { get; set; }
         public string PicUrl { get; set; }
+        public string PicUrlLg { get; set; }
+        public double Brutto { get; set; }
+        public decimal Long { get; set; }
+        public decimal Width { get; set; }
+        public decimal Height { get; set; }
+        public string Description { get; set; }
+        public string PriceString
+        {
+            get { return Price.ToString("N"); }
+        }
 
     }
 }

@@ -14,5 +14,14 @@ namespace Ridwan.Web.NasiLiwet.Test
             var a = repository.GetAllData();
             Assert.IsNotNull(a);
         }
+
+
+        [TestMethod]
+        public void GetById()
+        {
+            var repo = new ProductRepository();
+            var a = repo.GetOneById(1);
+            Assert.AreEqual(a.Name, "Nasi Liwet Rasa Cumi");
+        }
     }
 }

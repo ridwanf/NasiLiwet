@@ -19,7 +19,8 @@ namespace Ridwan.Web.NasiLiwet.Web.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var model = _repo.GetRandomData();
+            return View(model);
         }
 
         public ActionResult About()
@@ -53,6 +54,13 @@ namespace Ridwan.Web.NasiLiwet.Web.Controllers
         {
             MailHelper.SendEmail(email, name, null, message);
             return RedirectToAction("Contact");
+        }
+
+        [HttpGet]
+        public JsonResult GetOne(int id)
+        {
+            var result = _repo.GetOneById(id);
+            return Json(result,JsonRequestBehavior.AllowGet);
         }
     }
 }

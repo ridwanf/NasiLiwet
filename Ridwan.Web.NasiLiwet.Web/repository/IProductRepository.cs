@@ -9,5 +9,8 @@ namespace Ridwan.Web.NasiLiwet.Web.repository
     public interface IProductRepository
     {
         List<Product> GetAllData();
+        List<Product> GetRandomData();
+
+        Product GetOneById(int id);
     }
 }

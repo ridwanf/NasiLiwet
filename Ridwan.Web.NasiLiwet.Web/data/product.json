@@ -1,79 +1,266 @@
 ﻿[
     {
         "id": 1,
-        "name": "Nasi Liwet Rasa Cumi 250 gr",
+        "name": "Nasi Liwet Rasa Cumi",
         "price": 17000,
         "weight": 250,
-        "picurl": "../content/img/liwet-cumi-250.jpg"
+        "brutto": 300,
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "picurl": "../content/img/liwet-cumi-250.jpg",
+        "picurllg": "../content/img/liwet-cumi-250-lg.jpg",
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Cumi 250 Gr, terdiri dari beras Garut pilihan lengkap dengan bumbu, rempah-rempah dan Cumi Kering, 100% Natural."
+
     },
     {
 
         "id": 2,
-        "name": "Nasi Uduk ungu 250 gr",
+        "name": "Nasi Uduk ungu",
         "price": 17000,
         "weight": 250,
-        "picurl": "../content/img/uduk-ungu-250.jpg"
+        "brutto": 300,
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "picurl": "../content/img/uduk-ungu-250.jpg",
+        "picurllg": "../content/img/uduk-ungu-250-lg.jpg",
+        "description": "Nasi Uduk Ungu 1001 merupakan terobosan terbaru dari CV. Seribu Satu dimana memudahkan siapa saja untuk memasak nasi uduk dengan cepat dan tetap nikmat, terbuat dari beras Garut pilihan dengan menggunakan bahan - bahan  alami, dengan warna ungu yang berasal dari ubi ungu."
+
     },
     {
 
         "id": 3,
-        "name": "Nasi Liwet Rasa Jengkol 250 gr",
-        "price": 17.000,
+        "name": "Nasi Liwet Rasa Jengkol",
+        "price": 17000,
         "weight": 250,
-        "picurl": "../content/img/liwet-jengkol-250.jpg"
+        "brutto": 300,
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "picurl": "../content/img/liwet-jengkol-250.jpg",
+        "picurllg": "../content/img/liwet-jengkol-250-lg.jpg",
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Jengkol 250 gr, terdiri dari beras Garut pilihan lengkap dengan bumbu, rempah-rempah dan Jengkol Kering, 100% Natural."
     },
     {
 
         "id": 4,
-        "name": "Nasi Liwet pedas 250 gr",
-        "price": 17.000,
+        "name": "Nasi Liwet pedas",
+        "price": 17000,
         "weight": 250,
-        "picurl": "../content/img/liwet-pedas-250.jpg"
+        "brutto": 300,
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "picurl": "../content/img/liwet-pedas-250.jpg",
+        "picurllg": "../content/img/liwet-pedas-250-lg.jpg",
+        "description": "Nasi Liwet Instan 1001 Edisi Pedas merupakan terobosan terbaru dari CV. Seribu Satu dimana memudahkan siapa saja untuk memasak nasi liwet selera pedas dengan cepat dan tetap nikmat, terbuat dari beras Garut pilihan dengan menggunakan bahan - bahan  alami."
+
     },
     {
         "id": 5,
-        "name": "Nasi Liwet Rasa jambal 250 gr",
+        "name": "Nasi Liwet Rasa jambal",
         "price": 17000,
         "weight": 250,
-        "picurl": "../content/img/liwet-jambal-250.jpg"
+        "brutto": 300,
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "picurl": "../content/img/liwet-jambal-250.jpg",
+        "picurllg": "../content/img/liwet-jambal-250-lg.jpg",
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Jambal 250 Gr, terdiri dari beras Garut pilihan lengkap dengan bumbu, rempah-rempah dan jambal kering, 100% Natural."
     },
     {
         "id": 6,
-        "name": "Nasi Liwet Rasa Cumi 500 gr",
+        "name": "Nasi Liwet Rasa Cumi ",
         "price": 27500,
         "weight": 500,
-        "picurl": "../content/img/liwet-cumi-500.jpg"
+        "brutto": 600,
+        "long": 16.5,
+        "width": 11.5,
+        "height": 5.3,
+        "picurl": "../content/img/liwet-cumi-500.jpg",
+        "picurllg": "../content/img/liwet-cumi-500-lg.jpg",
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Cumi 500 Gr, terdiri dari beras Garut pilihan lengkap dengan bumbu, rempah-rempah dan Cumi Kering, 100% Natural."
+
     },
     {
 
         "id": 7,
-        "name": "Nasi uduk original 250 gr",
+        "name": "Nasi uduk original",
         "price": 17000,
         "weight": 250,
-        "picurl": "../content/img/uduk-ori-250.jpg"
+        "brutto": 300,
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "picurl": "../content/img/uduk-ori-250.jpg",
+        "picurllg": "../content/img/uduk-ori-250-lg.jpg",
+        "description": "Nasi Uduk Original 1001 merupakan terobosan terbaru dari CV. Seribu Satu dimana memudahkan siapa saja untuk memasak nasi uduk dengan cepat dan tetap nikmat, terbuat dari beras Garut pilihan dengan bahan - bahan  alami."
     },
     {
 
         "id": 8,
-        "name": "Nasi Liwet Rasa Pete 250 gr",
+        "name": "Nasi Liwet Rasa Pete",
         "price": 17000,
         "weight": 250,
-        "picurl": "../content/img/liwet-pete-250.jpg"
+        "brutto": 300,
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "picurl": "../content/img/liwet-pete-250.jpg",
+        "picurllg": "../content/img/liwet-pete-250-lg.jpg",
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Pete 250 Gr, terdiri dari beras Garut pilihan lengkap dengan bumbu, rempah-rempah dan Pete Kering, 100% Natural."
+
     },
     {
 
         "id": 9,
-        "name": "Nasi Kuning Pedas 250 gr",
+        "name": "Nasi Kuning Pedas",
         "price": 17000,
         "weight": 250,
-        "picurl": "../content/img/kuning-pedas-250.jpg"
+        "brutto": 300,
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "picurl": "../content/img/kuning-pedas-250.jpg",
+        "picurllg": "../content/img/kuning-pedas-250-lg.jpg",
+        "description": "Nasi Kuning Instan 1001 spicy edition merupakan terobosan terbaru dari CV. Seribu Satu dimana memudahkan siapa saja untuk memasak nasi kuning selera pedas dengan cepat dan tetap nikmat, terbuat dari beras Garut pilihan dengan menggunakan bahan - bahan  alami, dengan warna kuning yang berasal dari kunyit. "
+
     },
     {
 
         "id": 10,
-        "name": "Nasi Liwet Rasa Pete 500 gr",
+        "name": "Nasi Liwet Rasa Pete ",
         "price": 27500,
         "weight": 500,
-        "picurl": "../content/img/liwet-pete-500.jpg"
+        "brutto": 600,
+        "picurllg": "../content/img/liwet-pete-500-lg.jpg",
+        "picurl": "../content/img/liwet-pete-500.jpg",
+        "long": 16.5,
+        "width": 11.5,
+        "height": 5.3,
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Pete 500 Gr, terdiri dari beras Garut pilihan lengkap dengan bumbu, rempah-rempah dan Pete Kering, 100% Natural."
+    },
+    {
+
+        "id": 11,
+        "name": "Nasi Kuning Instan",
+        "price": 17000,
+        "weight": 250,
+        "brutto": 300,
+        "picurllg": "../content/img/kuning-ori-250-lg.jpg",
+        "picurl": "../content/img/kuning-ori-250.jpg",
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "description": "Nasi Kuning Instan 1001 merupakan terobosan terbaru dari CV. Seribu Satu dimana memudahkan siapa saja untuk memasak nasi kuning dengan cepat dan tetap nikmat, terbuat dari beras Garut pilihan dengan menggunakan bahan - bahan  alami, dengan warna kuning yang berasal dari kunyit. "
+    },
+    {
+
+        "id": 12,
+        "name": "Liwet 1001 Rasa Teri",
+        "price": 17000,
+        "weight": 250,
+        "brutto": 300,
+        "picurllg": "../content/img/liwet-teri-250-lg.jpg",
+        "picurl": "../content/img/liwet-teri-250.jpg",
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Teri 250 Gr, terdiri dari beras Garut pilihan lengkap dengan bumbu, rempah-rempah dan Ikan Teri, 100% Natural."
+    },
+    {
+        "id": 13,
+        "name": "Nasi Uduk Angkak 1001 -",
+        "price": 17000,
+        "weight": 250,
+        "brutto": 300,
+        "picurllg": "../content/img/uduk-angkak-250-lg.jpg",
+        "picurl": "../content/img/uduk-angkak-250.jpg",
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "description": "Nasi Uduk Angkak 1001 merupakan terobosan terbaru dari CV. Seribu Satu dimana memudahkan siapa saja untuk memasak nasi uduk dengan cepat dan tetap nikmat, terbuat dari beras Garut pilihan dengan menggunakan bahan - bahan  alami, dengan warna merah yang berasal dari angkak."
+    },
+    {
+        "id": 14,
+        "name": "Liwet 1001 Rasa Teri ",
+        "price": 27500,
+        "weight": 500,
+        "brutto": 600,
+        "picurllg": "../content/img/liwet-teri-500-lg.jpg",
+        "picurl": "../content/img/liwet-teri-500.jpg",
+        "long": 16.5,
+        "width": 11.5,
+        "height": 5.3,
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Teri 500 Gr, terdiri dari beras Garut pilihan lengkap dengan bumbu, rempah-rempah dan Ikan Teri, 100% Natural."
+    },
+    {
+        "id": 15,
+        "name": "Liwet 1001 Rasa Jengkol",
+        "price": 17000,
+        "weight": 250,
+        "brutto": 300,
+        "picurllg": "../content/img/liwet-jengkol-250-lg.jpg",
+        "picurl": "../content/img/liwet-jengkol-250.jpg",
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Jengkol 250 gr, terdiri dari beras Garut pilihan lengkap dengan bumbu, rempah-rempah dan Jengkol Kering, 100% Natural."
+    },
+    {
+        "id": 16,
+        "name": "Nasi Uduk Pedas 1001 -",
+        "price": 17000,
+        "weight": 250,
+        "brutto": 300,
+        "picurllg": "../content/img/uduk-pedas-250-lg.jpg",
+        "picurl": "../content/img/uduk-pedas-250.jpg",
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "description": "Nasi uduk instan 1001 Selera Pedas merupakan terobosan terbaru dari CV. Seribu Satu dimana memudahkan siapa saja untuk memasak nasi uduk selera pedas dengan cepat dan tetap nikmat, terbuat dari beras Garut pilihan dengan bahan - bahan  alami. "
+    },
+
+    {
+        "id": 16,
+        "name": "Liwet 1001 Rasa Original",
+        "price": 17000,
+        "weight": 250,
+        "brutto": 300,
+        "picurllg": "../content/img/liwet-ori-250-lg.jpg",
+        "picurl": "../content/img/liwet-ori-250.jpg",
+        "long": 13.5,
+        "width": 8,
+        "height": 5.3,
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Original 250 Gr, terdiri dari beras Garut pilihan lengkap dengan bumbu,dan rempah-rempah, 100% Natural."
+    },
+    {
+        "id": 17,
+        "name": "Liwet 1001 Rasa Jambal ",
+        "price": 27500,
+        "weight": 500,
+        "brutto": 600,
+        "picurllg": "../content/img/liwet-jambal-500-lg.jpg",
+        "picurl": "../content/img/liwet-jambal-500.jpg",
+        "long": 16.5,
+        "width": 11.5,
+        "height": 5.3,
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Jambal 500 Gr, terdiri dari beras Garut pilihan lengkap dengan bumbu, rempah-rempah dan jambal kering, 100% Natural."
+    },
+
+    {
+        "id": 18,
+        "name": "Liwet 1001 Rasa Original ",
+        "price": 27500,
+        "weight": 500,
+        "brutto": 600,
+        "picurllg": "../content/img/liwet-ori-500-lg.jpg",
+        "picurl": "../content/img/liwet-ori-500.jpg",
+        "long": 16.5,
+        "width": 11.5,
+        "height": 5.3,
+        "description": "Nasi Liwet Instan Seribu Satu (1001) Rasa Original 500 Gr, terdiri dari beras Garut pilihan lengkap dengan bumbu, rempah-rempah, 100% Natural."
     }
 ]
