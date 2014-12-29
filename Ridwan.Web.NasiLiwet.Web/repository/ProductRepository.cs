@@ -24,9 +24,9 @@ namespace Ridwan.Web.NasiLiwet.Web.repository
             }
         }
 
-        public List<Product> GetAllData()
+        public IEnumerable<Product> GetAllData()
         {
-            return _products.ToList();
+            return _products.ToList().Where(o=>o.IsAvailable);
 
         }
 

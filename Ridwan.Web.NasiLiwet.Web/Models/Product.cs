@@ -18,6 +18,7 @@ namespace Ridwan.Web.NasiLiwet.Web.Models
         public decimal Width { get; set; }
         public decimal Height { get; set; }
         public string Description { get; set; }
+        public bool IsAvailable { get; set; }
         public string PriceString
         {
             get { return Price.ToString("N"); }
