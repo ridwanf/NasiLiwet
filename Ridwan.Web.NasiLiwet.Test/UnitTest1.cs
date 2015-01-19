@@ -23,5 +23,13 @@ namespace Ridwan.Web.NasiLiwet.Test
             var a = repo.GetOneById(1);
             Assert.AreEqual(a.Name, "Nasi Liwet Rasa Cumi");
         }
+
+        [TestMethod]
+        public void GetCity()
+        {
+            var repo = new ProductRepository();
+            var result = repo.GetStatusOngkir("BOGOR");
+            Assert.IsNotNull(result);
+        }
     }
 }

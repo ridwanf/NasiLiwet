@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Nasi Liwet Rasa Cumi",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "brutto": 300,
         "isavailable": true,
@@ -18,7 +18,7 @@
 
         "id": 2,
         "name": "Nasi Uduk ungu",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "brutto": 300,
         "isavailable": true,
@@ -34,7 +34,7 @@
 
         "id": 3,
         "name": "Nasi Liwet Rasa Jengkol",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "brutto": 300,
         "isavailable": true,
@@ -49,7 +49,7 @@
 
         "id": 4,
         "name": "Nasi Liwet pedas",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "brutto": 300,
         "isavailable": true,
@@ -64,7 +64,7 @@
     {
         "id": 5,
         "name": "Nasi Liwet Rasa jambal",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "brutto": 300,
         "isavailable": true,
@@ -78,7 +78,7 @@
     {
         "id": 6,
         "name": "Nasi Liwet Rasa Cumi ",
-        "price": 27500,
+        "price": 30000,
         "weight": 500,
         "brutto": 600,
         "isavailable": true,
@@ -94,7 +94,7 @@
 
         "id": 7,
         "name": "Nasi uduk original",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "brutto": 300,
         "isavailable": true,
@@ -109,7 +109,7 @@
 
         "id": 8,
         "name": "Nasi Liwet Rasa Pete",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "brutto": 300,
         "isavailable": true,
@@ -125,7 +125,7 @@
 
         "id": 9,
         "name": "Nasi Kuning Pedas",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "brutto": 300,
         "isavailable": true,
@@ -141,7 +141,7 @@
 
         "id": 10,
         "name": "Nasi Liwet Rasa Pete ",
-        "price": 27500,
+        "price": 30000,
         "weight": 500,
         "isavailable": true,
         "brutto": 600,
@@ -156,7 +156,7 @@
 
         "id": 11,
         "name": "Nasi Kuning Instan",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "isavailable": true,
         "brutto": 300,
@@ -171,7 +171,7 @@
 
         "id": 12,
         "name": "Liwet 1001 Rasa Teri",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "brutto": 300,
         "isavailable": true,
@@ -185,7 +185,7 @@
     {
         "id": 13,
         "name": "Nasi Uduk Angkak 1001",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "brutto": 300,
         "picurllg": "../content/img/uduk-angkak-250-lg.jpg",
@@ -199,7 +199,7 @@
     {
         "id": 14,
         "name": "Liwet 1001 Rasa Teri ",
-        "price": 27500,
+        "price": 30000,
         "weight": 500,
         "isavailable": true,
         "brutto": 600,
@@ -214,7 +214,7 @@
         "id": 15,
         "name": "Liwet 1001 Rasa Jengkol",
         "isavailable": true,
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "brutto": 300,
         "picurllg": "../content/img/liwet-jengkol-250-lg.jpg",
@@ -227,7 +227,7 @@
     {
         "id": 16,
         "name": "Nasi Uduk Pedas 1001",
-        "price": 17000,
+        "price": 20000,
         "isavailable": true,
         "weight": 250,
         "brutto": 300,
@@ -242,7 +242,7 @@
     {
         "id": 16,
         "name": "Liwet 1001 Rasa Original",
-        "price": 17000,
+        "price": 20000,
         "weight": 250,
         "isavailable": true,
         "brutto": 300,
@@ -256,7 +256,7 @@
     {
         "id": 17,
         "name": "Liwet 1001 Rasa Jambal ",
-        "price": 27500,
+        "price": 30000,
         "weight": 500,
         "brutto": 600,
         "isavailable": true,
@@ -271,7 +271,7 @@
     {
         "id": 18,
         "name": "Liwet 1001 Rasa Original ",
-        "price": 27500,
+        "price": 30000,
         "weight": 500,
         "isavailable": true,
         "brutto": 600,

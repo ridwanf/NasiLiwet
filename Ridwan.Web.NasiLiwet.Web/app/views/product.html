@@ -1,0 +1,150 @@
+﻿
+<script type="text/javascript">
+
+    var setDetail = function(data) {
+        $('#namaItem').text(data.Name);
+        $('#beratBersih').text(data.Weight);
+        $('#panjang').text(data.Long);
+        $('#lebar').text(data.Width);
+        $('#tinggi').text(data.Height);
+        $('#detailDescription').text(data.Description);
+        $('#harga').text(data.PriceString);
+        $('#imageDetail').attr("src", data.PicUrlLg);
+    };
+
+
+    var getOne = function (id) {
+        $.ajax({
+            url: "/api/product/"+id,
+            type: "GET",
+            //data: { "id": id },
+            success: function (data) {
+                setDetail(data);
+            },
+            errror: function (data) {
+                alert("error");
+            }
+        });
+    };
+
+
+    var getDetail = function(a) {
+        var id = $(a).attr('id');
+        getOne(parseInt(id));
+        $("#modalProductDetail").modal();
+    };
+
+
+
+</script>
+
+
+
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-6" ng-repeat="i in data">
+        <div class="thumbnail">
+            <img ng-src="{{i.PicUrl}}" alt="">
+            <div class="caption">
+                <h4 class="pull-right">Rp {{i.PriceString}}</h4>
+                <h4>
+                    <a data-toggle="modal" href="#" onclick='getDetail(this)' id="{{i.Id}}">{{i.Name}}</a>
+                </h4>
+                <p>
+                    {{i.Name}} {{i.Weight}} gram<br />
+                    Rp.{{i.PriceString}}
+                </p>
+            </div>
+            <!--@*<div class="ratings">
+                <p class="pull-right">15 reviews</p>
+                <p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </p>
+            </div>*@-->
+        </div>
+    </div>
+    
+</div>
+
+
+
+<div class="modal fade" data-backdrop="static" id="modalProductDetail" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Detail Produk</h4>
+            </div>
+            <div class="modal-body">
+                <div style="vertical-align:middle; text-align:center">
+                    <img id="imageDetail" style="width: 550px;height: 400px;"  />
+                </div>
+                <span id="detailDescription"></span>
+                <h4>Detail Produk</h4>
+                <hr />
+                <table class="table-striped" style="width: 100%">
+                    <tr>
+                        <td>
+                            Name Item:
+                        </td>
+                        <td>
+                            <label id="namaItem"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Berat Bersih:
+                        </td>
+                        <td>
+                            <label> <span id="beratBersih"></span> gram</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Harga:
+                        </td>
+                        <td>
+                            <label>Rp.<span id="harga"></span> </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Izin Depkes:
+                        </td>
+                        <td><label> PIRT No. 8135320503816</label> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Halal MUI:
+                        </td>
+                        <td>
+                            <label>01331068720112</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Dimensi  :
+                        </td>
+                        <td>
+                            <label> <span id="panjang"> </span> cm X <span id="lebar"></span> cm X <span id="tinggi"></span> cm </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Buatan  :
+                        </td>
+                        <td>
+                            <label>  CV. 1001 Garut Jawa Barat - Indonesia</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>

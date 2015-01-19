@@ -10,57 +10,57 @@ namespace Ridwan.Web.NasiLiwet.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private IProductRepository _repo;
+        //private IProductRepository _repo;
 
-        public HomeController(IProductRepository repo)
-        {
-            _repo = repo;
-        }
+        //public HomeController(IProductRepository repo)
+        //{
+        //    _repo = repo;
+        //}
 
         public ActionResult Index()
         {
-            var model = _repo.GetRandomData();
-            return View(model);
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+           
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+        //public ActionResult About()
+        //{
+        //    ViewBag.Message = "Your application description page.";
+        //    return View();
+        //}
 
-            return View();
-        }
+        //public ActionResult Contact()
+        //{
+        //    ViewBag.Message = "Your contact page.";
 
-        public ActionResult Product()
-        {
-            ViewBag.Message = "Product";
-            var model = _repo.GetAllData();
+        //    return View();
+        //}
 
-            return View(model);
-        }
+        //public ActionResult Product()
+        //{
+        //    ViewBag.Message = "Product";
+        //    var model = _repo.GetAllData();
 
-        public ActionResult CaraPenyajian()
-        {
-            ViewBag.Message = "Cara Penyajian";
-            return View();
-        }
+        //    return View(model);
+        //}
 
-        public ActionResult SendEmail(string name, string email, string message)
-        {
-            MailHelper.SendEmail(email, name, null, message);
-            return RedirectToAction("Contact");
-        }
+        //public ActionResult CaraPenyajian()
+        //{
+        //    ViewBag.Message = "Cara Penyajian";
+        //    return View();
+        //}
 
-        [HttpGet]
-        public JsonResult GetOne(int id)
-        {
-            var result = _repo.GetOneById(id);
-            return Json(result,JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult SendEmail(string name, string email, string message)
+        //{
+        //    MailHelper.SendEmail(email, name, null, message);
+        //    return RedirectToAction("Contact");
+        //}
+
+        //[HttpGet]
+        //public JsonResult GetOne(int id)
+        //{
+        //    var result = _repo.GetOneById(id);
+        //    return Json(result,JsonRequestBehavior.AllowGet);
+        //}
     }
 }

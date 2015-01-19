@@ -22,7 +22,8 @@ namespace Ridwan.Web.NasiLiwet.Web.helper
         public static bool SendEmail(string from, string subject, ListDictionary param, string bodyTemplate)
         {
             var subjectEmail = "Email From " + subject + '-' + from;
-            return SendEmail(from, subjectEmail, param, bodyTemplate, null);
+            var result= SendEmail(from, subjectEmail, param, bodyTemplate, null);
+            return result;
         }
 
         public static bool SendEmail(string from, string subject, ListDictionary param, string bodyTemplate,

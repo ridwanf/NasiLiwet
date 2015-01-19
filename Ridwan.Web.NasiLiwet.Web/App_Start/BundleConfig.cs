@@ -23,6 +23,18 @@ namespace Ridwan.Web.NasiLiwet.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                   "~/Scripts/angular.js",
+                   "~/Scripts/angular-route.js",
+                   "~/app/app.js",
+                   "~/app/controllers/homeController.js",
+                   "~/app/controllers/productController.js",
+                   "~/app/controllers/caraPenyajianController.js",
+                   "~/app/controllers/aboutController.js",
+                   "~/app/controllers/ContactController.js"
+                   ));
+
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/heroic-features.css"));

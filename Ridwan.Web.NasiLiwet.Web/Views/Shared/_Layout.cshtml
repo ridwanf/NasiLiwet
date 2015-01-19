@@ -1,11 +1,15 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="liwetApp">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Nasi Liwet 1001</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 
 </head>
 
@@ -26,11 +30,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Product", "Product", "Home")</li>
-                    <li>@Html.ActionLink("Cara Penyajian", "CaraPenyajian", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li><a href="/Home">Home</a></li>
+                    <li><a href="/Home/Product">Product</a></li>
+                    <li><a href="/Home/CaraPenyajian">Cara Penyajian</a> <li>
+                    <li><a href="/Home/About">About</a></li>
+                    <li><a href="/Home/Contact">Contact Us</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -53,10 +57,8 @@
         </footer>
     </div>
 
-  
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
-    </body>
+
+   
+</body>
 </html>

@@ -1,0 +1,40 @@
+﻿<header class="jumbotron hero-spacer main-header">
+    <div id="main-header-div">
+        <h1 style="margin-left: 10px">Selamat Datang!</h1>
+        <p style="margin-left: 10px">
+            Dimulai pada awal tahun 2011, melalui berbagai macam eksperimen dan penelitian Kang Andris Wijaya, berhasil menemukan inovasi baru yaitu merubah beras yang tadinya hanya dijual curah menjadi oleh-oleh khas Garut yang unik dan memiliki nilai tambah yang besar secara ekonomi, maka terciptalah beras aromatic 1001 dan liwet instant 1001 dengan berbagai varian rasa
+        </p>
+
+    </div>
+    <p>
+        <a href="/Home/Product" class="btn btn-primary btn-lg">Lebih Lengkap</a>
+    </p>
+</header>
+<hr>
+<!-- Title -->
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Produk Terbaru</h3>
+    </div>
+</div>
+<!-- /.row -->
+<!-- Page Features -->
+<div class="row text-center">
+    <div class="col-md-3 col-sm-6 hero-feature" ng-repeat="i in data">
+        <div class="thumbnail">
+            <img ng-src="{{i.PicUrl}}" alt="">
+            <div class="caption">
+                <h3>{{i.Name}}</h3>
+                <p>
+                    {{i.Name}} <br />
+                    Berat: {{i.Weight}} gr &nbsp;Harga Rp. {{i.PriceString}}
+                </p>
+                <p>
+                    <a href="/Home/Product" class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+  
+</div>
