@@ -14,26 +14,26 @@ namespace Ridwan.Web.NasiLiwet.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Home",
-                url: "Home",
-                defaults: new { controller = "Home", action = "Index" }
+            //routes.MapRoute(
+            //    name: "Home",
+            //    url: "Home",
+            //    defaults: new { controller = "Home", action = "Index" }
 
-            );
+            //);
 
-          //  routes.MapRoute(
-          //    name: "Product",
-          //    url: "Home/Contact",
-          //    defaults: new { controller = "Home", action = "Contact" }
+            //  routes.MapRoute(
+            //    name: "Product",
+            //    url: "Home/Contact",
+            //    defaults: new { controller = "Home", action = "Contact" }
 
-          //);
+            //);
 
-          //  routes.MapRoute(
-          //     name: "DefaultApiMvc",
-          //     url: "{controller}/{action}",
-          //     defaults: new { controller = "Home", action = "Index" }
+            //  routes.MapRoute(
+            //     name: "DefaultApiMvc",
+            //     url: "{controller}/{action}",
+            //     defaults: new { controller = "Home", action = "Index" }
 
-          // );
+            // );
 
             routes.MapRoute(
         name: "Default",

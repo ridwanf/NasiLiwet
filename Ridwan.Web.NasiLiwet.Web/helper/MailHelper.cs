@@ -22,7 +22,9 @@ namespace Ridwan.Web.NasiLiwet.Web.helper
         public static bool SendEmail(string from, string subject, ListDictionary param, string bodyTemplate)
         {
             var subjectEmail = "Email From " + subject + '-' + from;
+            
             var result= SendEmail(from, subjectEmail, param, bodyTemplate, null);
+            SendEmailToSender(from);
             return result;
         }
 
@@ -79,5 +81,35 @@ namespace Ridwan.Web.NasiLiwet.Web.helper
 
             return mail;
         }
+
+        public static bool SendEmailToSender(string from)
+        {
+            try
+            {
+                var client = new SmtpClient();
+                client.UseDefaultCredentials = true;
+                client.Host = "smtp.gmail.com";
+                client.Credentials = new NetworkCredential(User, Pass);
+                client.Port = 587;
+                client.EnableSsl = true;
+                var bodyTemplate = "thank you for contact us";
+                var mail = ComposeMail(from, "noreply@liwet.com", "thank you for contact us", null, bodyTemplate,null);
+                AlternateView view = AlternateView.CreateAlternateViewFromString(bodyTemplate, null,
+                                                           MediaTypeNames.Text.Html);
+                mail.AlternateViews.Add(view);
+                mail.IsBodyHtml = true;
+
+                client.Send(mail);
+
+                client.Dispose();
+                mail.Dispose();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
     }
 }

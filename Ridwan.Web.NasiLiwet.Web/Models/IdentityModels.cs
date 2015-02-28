@@ -29,5 +29,7 @@ namespace Ridwan.Web.NasiLiwet.Web.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Ridwan.Web.NasiLiwet.Web.Models.Product> Products { get; set; }
     }
 }

@@ -4,7 +4,7 @@ liwetApp.controller('ContactController', ["$scope", "$http", "$window", function
     $scope.newContact = {};
 
     $scope.submit = function() {
-        debugger;
+       // debugger;
         $http.post("/api/product", $scope.newContact)
             .then(function(result) {
                 alert("success send email");

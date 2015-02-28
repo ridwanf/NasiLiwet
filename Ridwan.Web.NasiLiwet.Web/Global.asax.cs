@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Microsoft.AspNet.Identity;
+using Ridwan.Web.NasiLiwet.Web.helper;
 using Ridwan.Web.NasiLiwet.Web.repository;
 using SimpleInjector;
 using SimpleInjector.Integration.Web.Mvc;
@@ -29,7 +30,7 @@ namespace Ridwan.Web.NasiLiwet.Web
             Bootstrap();
             ValueProviderFactories.Factories.Add(new JsonValueProviderFactory());
             GlobalConfiguration.Configuration.EnsureInitialized();
-
+            ModelMetadataProviders.Current = new ConventionProvider();
 
         }
 

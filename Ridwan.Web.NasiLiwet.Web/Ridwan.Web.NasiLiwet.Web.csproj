@@ -196,9 +196,11 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\TestingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="helper\ConventionProvider.cs" />
     <Compile Include="helper\MailHelper.cs" />
     <Compile Include="helper\ViewHelper.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -279,6 +281,7 @@
     <Content Include="Content\img\whatsapp-48.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="js\home-index.js" />
@@ -312,10 +315,6 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="data\product.json" />
-    <None Include="Properties\PublishProfiles\liwet1001 - FTP %282%29.pubxml" />
-    <None Include="Properties\PublishProfiles\liwet1001 - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\liwet1001 - Web Deploy %282%29.pubxml" />
-    <None Include="Properties\PublishProfiles\liwet1001 - Web Deploy.pubxml" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-touch.min.js.map" />
@@ -327,6 +326,7 @@
     <Content Include="Scripts\angular-cookies.min.js.map" />
     <Content Include="Scripts\angular-aria.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
+    <None Include="Properties\PublishProfiles\liwet1001.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
@@ -1126,6 +1126,7 @@
     <Content Include="Views\Home\Product.cshtml" />
     <Content Include="Views\Home\CaraPenyajian.cshtml" />
     <Content Include="Scripts\version.json" />
+    <Content Include="Views\Testing\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\directives\" />
@@ -1133,7 +1134,6 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
